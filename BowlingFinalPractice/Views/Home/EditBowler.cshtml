@@ -1,0 +1,18 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model Bowler
+<h2>Edit Bowler</h2>
+
+<form asp-action="EditBowler" method="post">
+    <input type="hidden" asp-for="BowlerId" />
+    <div>
+        <label asp-for="BowlerLastName">Last Name</label>
+        <input asp-for="BowlerLastName" />
+    </div>
+    <!-- Add more fields for other properties similarly -->
+    <div>
+        <input type="submit" value="Save" />
+    </div>
+</form>

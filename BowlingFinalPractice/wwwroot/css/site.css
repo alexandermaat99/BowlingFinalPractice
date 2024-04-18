@@ -1,0 +1,58 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/* Basic reset */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Collapses the border lines between cells */
+}
+
+/* Styling the table headers */
+th {
+    background-color: #f2f2f2; /* Light grey background for headers */
+    color: #333; /* Dark grey text color */
+    font-weight: bold; /* Makes header text bold */
+    padding: 12px 15px; /* Adds space around text in headers */
+    text-align: left; /* Aligns header text to the left */
+}
+
+/* Styling the table data cells */
+td {
+    padding: 10px 15px; /* Adds space around text in cells */
+    border-bottom: 1px solid #ddd; /* Adds a border line below each row */
+    text-align: left; /* Aligns cell text to the left */
+}
+
+/* Adding a hover effect on table rows */
+tr:hover {
+    background-color: #f9f9f9; /* Changes background on row hover */
+}
+
+/* Zebra striping for rows */
+tr:nth-child(odd) { /* Odd rows */
+    background-color: #fafafa; /* Very light grey */
+}
+
+tr:nth-child(even) { /* Even rows */
+    background-color: #eee; /* Slightly darker grey */
+}
